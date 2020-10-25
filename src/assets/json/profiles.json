@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "givenName": "Renee",
+        "lastName": "CULAWAY",
+        "imageUrl": "assets/images/1.png",
+        "email": "rjculaway@live.com",
+        "phone": "9671 5696",
+        "address": {
+            "postal": 142059,
+            "city": "Manila",
+            "country": "Philippines"
+        },
+        "about": "I have nine (9) years of experience building web applications using Angular, HTML, CSS, and JavaScript. My love for programming, UI/UX, and aesthetic designs drives me to bring requirements and mock-ups to life. Being a team player, I value and enjoy collaborating with people at work.",
+        "skills": [
+            {
+                "name": "Angular",
+                "value": 4
+            },
+            {
+                "name": "TypeScript",
+                "value": 3
+            },
+            {
+                "name": "JavaScript",
+                "value": 3
+            },
+            {
+                "name": "HTML",
+                "value": 4
+            },
+            {
+                "name": "Sass",
+                "value": 3
+            },
+            {
+                "name": "CSS",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "givenName": "Michael",
+        "lastName": "Keisling",
+        "imageUrl": "assets/images/2.png",
+        "email": "mike.keisling@mailer.com",
+        "phone": "6720 8828",
+        "address": {
+            "postal": 569059,
+            "city": "Berlin",
+            "country": "Germany"
+        }
+    },
+    {
+        "id": 3,
+        "givenName": "Shen",
+        "lastName": "ZHI",
+        "imageUrl": "assets/images/3.png",
+        "email": "shen.zhi@mailer.com",
+        "phone": "9692 7266",
+        "address": {
+            "postal": 408559,
+            "city": "Singapore",
+            "country": "Singapore"
+        }
+    },
+    {
+        "id": 4,
+        "givenName": "Yi",
+        "lastName": "MIN",
+        "imageUrl": "assets/images/4.png",
+        "email": "yi.min@mailer.com",
+        "phone": "6294 5412",
+        "address": {
+            "postal": 339407,
+            "city": "Beijing",
+            "country": "China"
+        }
+    },
+    {
+        "id": 5,
+        "givenName": "Irene",
+        "lastName": "Nilouzakis",
+        "imageUrl": "assets/images/5.png",
+        "email": "irene.nilouzakis@mailer.com",
+        "phone": "6567 4453",
+        "address": {
+            "postal": 179025,
+            "city": "Melbourne",
+            "country": "Australia"
+        }
+    },
+    {
+        "id": 6,
+        "givenName": "Sandeep",
+        "lastName": "LOKE",
+        "imageUrl": "assets/images/6.png",
+        "email": "sandeep.loke@mailer.com",
+        "phone": "6734 1127",
+        "address": {
+            "postal": 400016,
+            "city": "Bangalore",
+            "country": "India"
+        }
+    }
+]

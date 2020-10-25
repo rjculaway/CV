@@ -1,0 +1,57 @@
+<div class="row profile-header" *ngIf="profile">
+  <div class="offset-xs-2 col-xs-8">
+    <div class="row">
+      <div class="offset-xs-1 col-xs-3">
+        <img *ngIf="profile.imageUrl" class="avatar" src="{{profile.imageUrl}}" />
+        <div *ngIf="!profile.imageUrl" class="avatar default">
+          {{profile.giveName.substring(0,1)}} {{profile.lastName.substring(0,1)}}
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>
+              {{profile.givenName}} {{profile.lastName}}
+            </h2>
+          </div>
+          <div class="col-xs-12">
+            <clr-icon shape="envelope"></clr-icon>
+            <a href="mailto:{{profile.email}}">{{profile.email}}</a>
+          </div>
+          <div class="col-xs-12">
+            <clr-icon shape="phone-handset"></clr-icon> {{profile.phone}}
+          </div>
+          <div class="col-xs-12">
+            <clr-icon shape="map-marker"></clr-icon> {{profile.address.city}}, {{profile.address.country}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row profile-detail" *ngIf="profile">
+  <div class="offset-sm-2 col-sm-8 offset-xs-12 col-xs-12">
+    <div class="row">
+      <div class="col-sm-7 col-xs-12">
+        <h1>
+          About Me
+        </h1>
+        <div class="bar"></div>
+        <p>
+            {{profile.about}}
+        </p>
+      </div>
+      <div class="offset-sm-1 col-sm-4 col-xs-12">
+        <h1>
+          Skills
+        </h1>
+        <div class="bar"></div>
+        <div *ngFor="let skill of profile.skills">
+          <h5>{{skill.name}}</h5>
+          <progress max="5" value="{{skill.value}}"></progress>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

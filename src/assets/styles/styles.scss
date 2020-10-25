@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+.avatar {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10rem;
+
+    &.default {
+        background: #efefef;
+        color: #cdcdcd;
+        font-size: 2rem;
+        line-height: 5rem;
+        text-align: center;
+    }
+}
+
+div {
+    &.bar 
+    {
+            width: 3rem;
+            height: 0.2rem;
+            background: #cdcdcd;
+            margin-top: 0.25rem;
+    }
+}
+
+.preloader-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    padding-top: 25%;
+    background: #003D79;
+    text-align: center;
+  }
+
+  .preloader-text {
+      clear:both;
+      color: white;
+  }
+
+  .preloader-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .preloader {
+    width: 0.5rem;
+    height: 1rem;
+    margin-right: 0.25rem;
+    background: #efefef;
+  }
+
+  .preloader:nth-child(1) {
+    transition: #efefef 0.10 e;
+    opacity: 0.20;
+  }
+
+  .preloader:nth-child(2) {
+    transition: #efefef 0.25 ease-in-out;
+    opacity: 0.40;
+  }
+
+  .preloader:nth-child(3) {
+    transition: #efefef 0.50 ease-in-out;
+    opacity: 0.60;
+  }
+
+  .preloader:nth-child(4) {
+    transition: #efefef 0.25 ease-in-out;
+    opacity: 0.40;
+  }
+
+  .preloader:nth-child(5) {
+    transition: #efefef 0.10 ease-in-out;
+    opacity: 0.2;
+  }

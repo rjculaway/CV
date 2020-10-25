@@ -1,0 +1,21 @@
+<header class="header header-5">
+  <div class="branding">
+    <a [routerLink]="['./home']" class="nav-link">
+      <clr-icon shape="users"></clr-icon>
+      <span class="title">SocialNetwork</span>
+    </a>
+  </div>
+
+  <div class="header-nav">
+    <a [routerLink]="['./profile']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+      true}" class="nav-link nav-text">Home</a>
+    <!-- <a [routerLink]="['./profile', 1]" routerLinkActive="active" class="nav-link nav-text">My Profile</a> -->
+  </div>
+
+  <app-quick-search></app-quick-search>
+  <div class="header-actions">
+    <a [routerLink]="['./profile', 1]" class="nav-link nav-text mr-1">
+      Renee CULAWAY
+    </a>
+  </div>
+</header>

@@ -1,0 +1,38 @@
+
+<div class="row">
+  <div class="offset-lg-1 col-lg-4 col-md-6 col-sm-12 col-xs-12" *ngFor="let profile of profiles">
+    <div class="card">
+      <div class="card-block">
+        <div class="card-text">
+          <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+              <img *ngIf="profile.imageUrl" class="avatar" src="{{profile.imageUrl}}" />
+              <div *ngIf="!profile.imageUrl" class="avatar default"> 
+                {{profile.name.substring(0,1)}}
+                {{profile.surname.substring(0,1)}}
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+              <h3>
+                {{profile.givenName}} {{profile.lastName}}
+              </h3>
+              <div class="info email">
+                <clr-icon shape="envelope"></clr-icon>
+                <a href="mailto:{{profile.email}}">{{profile.email}}</a>
+              </div>
+              <div class="info phone">
+                <clr-icon shape="phone-handset"></clr-icon> {{profile.phone}}
+              </div>
+              <div class="info address">
+                <clr-icon shape="map-marker"></clr-icon> {{profile.address.city}}, {{profile.address.country}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a [routerLink]="['./', profile.id]" class="btn btn-sm btn-link">VIEW</a>
+      </div>
+    </div>
+  </div>
+</div>
